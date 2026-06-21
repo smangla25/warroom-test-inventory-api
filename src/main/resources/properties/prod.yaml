@@ -1,0 +1,16 @@
+# WARROOM-TEST S3: mule.env CORRECT but UAT parity gap:
+# Missing keys vs uat.yaml: inventory.alert.email, inventory.webhook.url, inventory.batch.size
+http:
+  port: "8081"
+mule:
+  env: "prod"
+api:
+  autodiscovery:
+    id: "18542500"
+  client_id: "prod-inventory-client-id"
+inventory:
+  db:
+    host: "inventory-db.prod.company.com"
+    port: "5432"
+    name: "inventory_prod"
+# inventory.alert.email, inventory.webhook.url, inventory.batch.size INTENTIONALLY ABSENT

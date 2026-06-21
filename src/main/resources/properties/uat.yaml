@@ -1,0 +1,20 @@
+http:
+  port: "8081"
+mule:
+  env: "uat"
+api:
+  autodiscovery:
+    id: "18542300"
+  client_id: "uat-inventory-client-id"
+inventory:
+  db:
+    host: "inventory-db.uat.company.com"
+    port: "5432"
+    name: "inventory_uat"
+  # WARROOM-TEST: These 3 keys exist in UAT but NOT in prod.yaml (parity gap)
+  alert:
+    email: "inventory-alerts@company.com"
+  webhook:
+    url: "https://hooks.company.com/inventory-alerts"
+  batch:
+    size: "100"

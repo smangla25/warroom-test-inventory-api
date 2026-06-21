@@ -1,0 +1,6 @@
+# Production secrets - properly encrypted
+inventory:
+  db:
+    password: "![ENC(sT5uV6wX7yZ8aB9cD0eF1gH2iJ3kL4mN5)]"
+api:
+  client_secret: "![ENC(oP6qR7sT8uV9wX0yZ1aB2cD3eF4gH5iJ6)]"
